@@ -1,8 +1,58 @@
 .card{
-    margin-top: 50px;
+    margin: 50px auto;
+    width: 300px;
 
     &__image{
         width: 64px;
         height: 64px;
+        @extend %centerElemets;
+        border-radius: 5px;
+        background-color: $button-background-color;
+
+        i{
+            color: $icons-color;
+        }
     }
+
+    &__title{
+        h3{
+            font-size: $nav-font-size;
+        font-weight: 500;
+        margin: 20px 0;
+        }
+        p{
+            color: gray;
+            font-size: 14px;
+        }
+    }
+    &__links{
+        margin: 20px 0;
+    }
+}
+@media only screen and (max-width:992px) {
+    .element{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+}
+@media only screen and (max-width:576px) {
+    .element{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .card{
+
+            &__image{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+
 }
