@@ -10,7 +10,6 @@
 
 .container {
   margin: 0 auto;
-  width: 1250px;
 }
 
 @media (min-width: 576px) {
@@ -315,14 +314,13 @@
     width: 100%;
   }
 }
-.nav__links ul, .nav {
+.card__image, .nav__links ul, .nav {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 .nav {
-  width: 1250px;
   height: 50px;
   justify-content: space-between;
   padding: 50px;
@@ -354,19 +352,70 @@
 @media only screen and (max-width: 992px) {
   .nav__links {
     display: none;
+    visibility: hidden;
+    opacity: 0;
+  }
+  .nav__menu {
+    display: block !important;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .nav__links {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
   }
   .nav__menu {
     display: block !important;
   }
 }
 .card {
-  margin-top: 50px;
+  margin: 50px auto;
+  width: 300px;
 }
 .card__image {
   width: 64px;
   height: 64px;
+  border-radius: 5px;
+  background-color: #0d6efd;
+}
+.card__image i {
+  color: white;
+}
+.card__title h3 {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.card__title p {
+  color: gray;
+  font-size: 14px;
+}
+.card__links {
+  margin: 20px 0;
 }
 
+@media only screen and (max-width: 992px) {
+  .element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .element {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .element .card__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
 #hero {
   background-color: #212529;
   height: 500px;
@@ -435,4 +484,14 @@
 }
 #hero .hero-center-items .section__btns div:nth-of-type(2):hover a {
   color: black;
+}
+
+.footer {
+  width: 100%;
+  height: 100px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */
