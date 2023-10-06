@@ -237,7 +237,6 @@
     width: 100%;
   }
 }
-<<<<<<< HEAD
 /* X-Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .col-xl-1 {
@@ -317,38 +316,13 @@
   }
 }
 .nav__links ul, .nav {
-=======
-#hero {
-  background-color: #212529;
-  height: 500px;
-}
-#hero .hero-center-items {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  flex-direction: column;
-  height: 100%;
-  gap: 40px;
-}
-#hero .hero-center-items h1 {
-  color: white;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-#hero .hero-center-items p {
-  color: gray;
-}
-#hero .hero-center-items .section__btns {
->>>>>>> lachin
   display: flex;
   align-items: center;
   justify-content: center;
 }
-<<<<<<< HEAD
 
 .nav {
-  width: 100%;
+  width: 1250px;
   height: 50px;
   justify-content: space-between;
   padding: 50px;
@@ -391,7 +365,33 @@
 .card__image {
   width: 64px;
   height: 64px;
-=======
+}
+
+#hero {
+  background-color: #212529;
+  height: 500px;
+}
+#hero .hero-center-items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100%;
+  gap: 40px;
+}
+#hero .hero-center-items h1 {
+  color: white;
+  width: fit-content;
+}
+#hero .hero-center-items p {
+  color: gray;
+}
+#hero .hero-center-items .section__btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 #hero .hero-center-items .section__btns div:nth-of-type(1) {
   width: 150px;
   height: 40px;
@@ -435,5 +435,4 @@
 }
 #hero .hero-center-items .section__btns div:nth-of-type(2):hover a {
   color: black;
->>>>>>> lachin
 }/*# sourceMappingURL=style.css.map */
